@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where' Our Model</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body{
+            background-color:aliceblue;
+        }
+        #open-btn{
+            position:absolute;
+            top:70%;
+            left:30%;
+            width:350px;
+            height:50px;
+            border:2px solid black;
+            border-radius:8px;
+            background-color:transparent;
+            font-size:large;
+        }
+        #open-btn:hover{
+            background-color:blanchedalmond;
+        }
+        .model{
+            border:2px solid black;
+            width:250px;
+            height:80px;
+            display:flex;
+            position:absolute;
+            top:50%;
+            left:50%;
+            justify-content:space-around;
+            align-items:center;
+            font-size:1.8rem;
+            border-radius:10px;
+            animation-name: animateModel;
+            animation-duration:0.4s;
+        }
+        .model .close-btn{
+            color:red;
+            font-size:2rem;
+            cursor:pointer;
+        }
+        .model-container{
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+
+            justify-content:center;
+            align-items:center;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="open-btn">
+        Where's our Model
+    </button>
+    <div class="model-container">
+        <div class="model">
+            <p>Hey, I'm a model</p>
+            <span class="close-btn">&times;</span>
+        </div>
+    </div>
+    <script src="project-2.js"></script>
+</body>
+</html>

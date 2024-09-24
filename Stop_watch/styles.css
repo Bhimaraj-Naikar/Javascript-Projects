@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: auto;
+    box-sizing:border-box;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: black;
+}
+
+.cont{
+    position: fixed;
+    inset:0;
+    width:12rem;
+    height: 8rem;
+    max-height: 100dvh;
+    max-width: 100vw;
+    margin: auto;
+    border:.5px solid rgb(255, 255, 255) ;
+    border-radius: 10px;
+}
+.cont h4{
+    text-align: center;
+    margin:4px 0 -9px 0;
+}
+.cont #timer{
+    text-align:center;
+    padding: 20px 0;
+    font-size:35px;
+    color:white;
+}
+.cont .buttons{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.cont .buttons #startStop,#reset{
+    color:white;
+    margin: 0 15px;
+    padding:0 10px;
+    border:.5px solid rgb(255, 255, 255);
+    border-radius:2px
+}

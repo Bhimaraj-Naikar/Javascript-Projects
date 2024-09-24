@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: url(colorful_copy.jpg) no-repeat center center/cover;
+  background-color: #cdc7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-color: #fff;
+  padding: 10px;
+
+  border: 0.5px solid #000;
+  border-radius: 10px;
+}
+.container h3 {
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#add-task-container {
+  width: 350px;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+  display: flex;
+}
+input {
+  flex: 5;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+#add-task {
+  flex: 1;
+  font-size: 2rem;
+
+  transition: 0.3s;
+  background-color: #fff;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#add-task:hover {
+  background-color: green;
+  color: #fff;
+}
+
+/* Javascript variables */
+
+.task {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.task li {
+  list-style: none;
+  padding: 5px;
+  flex: 4;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.task button {
+  flex: 0.8;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 0.5px solid black;
+}
+.task button:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+.task .delete-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+.task .check-btn:hover {
+  background-color: green;
+  color: #fff;
+}
